@@ -1,0 +1,9 @@
+from django.shortcuts import render
+from homepage.models import File
+from mptt.utils import drilldown_tree_for_node
+
+# Create your views here.
+
+def index_view(request):
+    
+    return render(request, 'index.html')
